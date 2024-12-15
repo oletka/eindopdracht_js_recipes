@@ -1,0 +1,103 @@
+/* Подключаем шрифты */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #38E991;
+    --color-secondary: #2C2F39;
+    --color-tertiary: #50535C;
+    --color-secondary-light: #E8E9ED;
+    --color-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--color-secondary);
+    background-color: var(--color-secondary-light);
+}
+
+header {
+    background-color: var(--color-primary);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: var(--color-white);
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: var(--color-secondary);
+}
+
+button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-tertiary);
+    cursor: pointer;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid var(--color-secondary-light);
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
